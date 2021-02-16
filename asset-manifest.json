@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/shikamaro/static/js/main.c9e9e8d5.chunk.js",
-    "main.js.map": "/shikamaro/static/js/main.c9e9e8d5.chunk.js.map",
+    "main.js": "/shikamaro/static/js/main.349c6b25.chunk.js",
+    "main.js.map": "/shikamaro/static/js/main.349c6b25.chunk.js.map",
     "runtime-main.js": "/shikamaro/static/js/runtime-main.700b4fe9.js",
     "runtime-main.js.map": "/shikamaro/static/js/runtime-main.700b4fe9.js.map",
     "static/js/2.b0d17ae5.chunk.js": "/shikamaro/static/js/2.b0d17ae5.chunk.js",
@@ -21,6 +21,6 @@
   "entrypoints": [
     "static/js/runtime-main.700b4fe9.js",
     "static/js/2.b0d17ae5.chunk.js",
-    "static/js/main.c9e9e8d5.chunk.js"
+    "static/js/main.349c6b25.chunk.js"
   ]
 }
