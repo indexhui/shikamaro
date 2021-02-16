@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.js": "/shikamaro/static/js/main.c77a76a7.chunk.js",
-    "main.js.map": "/shikamaro/static/js/main.c77a76a7.chunk.js.map",
-    "runtime-main.js": "/shikamaro/static/js/runtime-main.21cd4a7f.js",
-    "runtime-main.js.map": "/shikamaro/static/js/runtime-main.21cd4a7f.js.map",
-    "static/js/2.48dcc3cd.chunk.js": "/shikamaro/static/js/2.48dcc3cd.chunk.js",
-    "static/js/2.48dcc3cd.chunk.js.map": "/shikamaro/static/js/2.48dcc3cd.chunk.js.map",
-    "static/js/3.ac99318f.chunk.js": "/shikamaro/static/js/3.ac99318f.chunk.js",
-    "static/js/3.ac99318f.chunk.js.map": "/shikamaro/static/js/3.ac99318f.chunk.js.map",
+    "main.js": "/shikamaro/static/js/main.c9e9e8d5.chunk.js",
+    "main.js.map": "/shikamaro/static/js/main.c9e9e8d5.chunk.js.map",
+    "runtime-main.js": "/shikamaro/static/js/runtime-main.700b4fe9.js",
+    "runtime-main.js.map": "/shikamaro/static/js/runtime-main.700b4fe9.js.map",
+    "static/js/2.b0d17ae5.chunk.js": "/shikamaro/static/js/2.b0d17ae5.chunk.js",
+    "static/js/2.b0d17ae5.chunk.js.map": "/shikamaro/static/js/2.b0d17ae5.chunk.js.map",
+    "static/js/3.ba4f4162.chunk.js": "/shikamaro/static/js/3.ba4f4162.chunk.js",
+    "static/js/3.ba4f4162.chunk.js.map": "/shikamaro/static/js/3.ba4f4162.chunk.js.map",
     "index.html": "/shikamaro/index.html",
-    "static/js/2.48dcc3cd.chunk.js.LICENSE.txt": "/shikamaro/static/js/2.48dcc3cd.chunk.js.LICENSE.txt",
+    "static/js/2.b0d17ae5.chunk.js.LICENSE.txt": "/shikamaro/static/js/2.b0d17ae5.chunk.js.LICENSE.txt",
     "static/media/avatar_ig.40f8d4e1.png": "/shikamaro/static/media/avatar_ig.40f8d4e1.png",
     "static/media/avatar_ig_daily.ae59d4c7.png": "/shikamaro/static/media/avatar_ig_daily.ae59d4c7.png",
     "static/media/avatar_ig_en.0732b0cb.png": "/shikamaro/static/media/avatar_ig_en.0732b0cb.png",
     "static/media/avatar_yt.821a1f03.png": "/shikamaro/static/media/avatar_yt.821a1f03.png",
-    "static/media/hero_bg.912c6fe9.png": "/shikamaro/static/media/hero_bg.912c6fe9.png",
+    "static/media/hero_bg.4c6bbf06.png": "/shikamaro/static/media/hero_bg.4c6bbf06.png",
     "static/media/line_sticker.dd3e8351.png": "/shikamaro/static/media/line_sticker.dd3e8351.png",
     "static/media/phone_case.ac5ad559.png": "/shikamaro/static/media/phone_case.ac5ad559.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.21cd4a7f.js",
-    "static/js/2.48dcc3cd.chunk.js",
-    "static/js/main.c77a76a7.chunk.js"
+    "static/js/runtime-main.700b4fe9.js",
+    "static/js/2.b0d17ae5.chunk.js",
+    "static/js/main.c9e9e8d5.chunk.js"
   ]
 }
