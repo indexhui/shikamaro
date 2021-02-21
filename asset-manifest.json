@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/shikamaro/static/js/main.8f5bfd57.chunk.js",
-    "main.js.map": "/shikamaro/static/js/main.8f5bfd57.chunk.js.map",
+    "main.js": "/shikamaro/static/js/main.d7eed563.chunk.js",
+    "main.js.map": "/shikamaro/static/js/main.d7eed563.chunk.js.map",
     "runtime-main.js": "/shikamaro/static/js/runtime-main.700b4fe9.js",
     "runtime-main.js.map": "/shikamaro/static/js/runtime-main.700b4fe9.js.map",
-    "static/js/2.ecf23b40.chunk.js": "/shikamaro/static/js/2.ecf23b40.chunk.js",
-    "static/js/2.ecf23b40.chunk.js.map": "/shikamaro/static/js/2.ecf23b40.chunk.js.map",
+    "static/js/2.0b08e15d.chunk.js": "/shikamaro/static/js/2.0b08e15d.chunk.js",
+    "static/js/2.0b08e15d.chunk.js.map": "/shikamaro/static/js/2.0b08e15d.chunk.js.map",
     "static/js/3.ba4f4162.chunk.js": "/shikamaro/static/js/3.ba4f4162.chunk.js",
     "static/js/3.ba4f4162.chunk.js.map": "/shikamaro/static/js/3.ba4f4162.chunk.js.map",
     "index.html": "/shikamaro/index.html",
-    "static/js/2.ecf23b40.chunk.js.LICENSE.txt": "/shikamaro/static/js/2.ecf23b40.chunk.js.LICENSE.txt",
+    "static/js/2.0b08e15d.chunk.js.LICENSE.txt": "/shikamaro/static/js/2.0b08e15d.chunk.js.LICENSE.txt",
     "static/media/avatar_ig.40f8d4e1.png": "/shikamaro/static/media/avatar_ig.40f8d4e1.png",
     "static/media/avatar_ig_daily.ae59d4c7.png": "/shikamaro/static/media/avatar_ig_daily.ae59d4c7.png",
     "static/media/avatar_ig_en.0732b0cb.png": "/shikamaro/static/media/avatar_ig_en.0732b0cb.png",
@@ -21,7 +21,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.700b4fe9.js",
-    "static/js/2.ecf23b40.chunk.js",
-    "static/js/main.8f5bfd57.chunk.js"
+    "static/js/2.0b08e15d.chunk.js",
+    "static/js/main.d7eed563.chunk.js"
   ]
 }
