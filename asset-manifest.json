@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.a07dffc2.chunk.js",
-    "main.js.map": "/static/js/main.a07dffc2.chunk.js.map",
+    "main.js": "/static/js/main.150e7404.chunk.js",
+    "main.js.map": "/static/js/main.150e7404.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.788d8833.js",
     "runtime-main.js.map": "/static/js/runtime-main.788d8833.js.map",
     "static/js/2.0b08e15d.chunk.js": "/static/js/2.0b08e15d.chunk.js",
@@ -14,8 +14,11 @@
     "static/media/avatar_ig_daily.ae59d4c7.png": "/static/media/avatar_ig_daily.ae59d4c7.png",
     "static/media/avatar_ig_en.0732b0cb.png": "/static/media/avatar_ig_en.0732b0cb.png",
     "static/media/avatar_yt.821a1f03.png": "/static/media/avatar_yt.821a1f03.png",
+    "static/media/easycard.671180ef.png": "/static/media/easycard.671180ef.png",
+    "static/media/easycardLimit.72e4196e.png": "/static/media/easycardLimit.72e4196e.png",
     "static/media/hero_bg.4c6bbf06.png": "/static/media/hero_bg.4c6bbf06.png",
     "static/media/hero_bg_lg.93200f3e.png": "/static/media/hero_bg_lg.93200f3e.png",
+    "static/media/lineTheme.fea294a5.jpg": "/static/media/lineTheme.fea294a5.jpg",
     "static/media/line_sticker.dd3e8351.png": "/static/media/line_sticker.dd3e8351.png",
     "static/media/penker.0d45d9dc.png": "/static/media/penker.0d45d9dc.png",
     "static/media/phone_case.6d13c384.png": "/static/media/phone_case.6d13c384.png"
@@ -23,6 +26,6 @@
   "entrypoints": [
     "static/js/runtime-main.788d8833.js",
     "static/js/2.0b08e15d.chunk.js",
-    "static/js/main.a07dffc2.chunk.js"
+    "static/js/main.150e7404.chunk.js"
   ]
 }
