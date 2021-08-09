@@ -14,6 +14,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Sectionlink from './components/Sectionlink';
 import Sectionproduct from './components/Sectionproduct';
+import News from './components/News';
 import Footer from './components/Footer';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { extendTheme } from "@chakra-ui/react";
@@ -47,15 +48,16 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <ParallaxProvider>
-      <Header/>
-      <Hero/>
-      <Flex align="center" justifyContent="center">
-        <Box width={{ base: "100%", sm: "100%", md: "1440px" }}>
-          <Sectionproduct/>
-          <Sectionlink/>
-        </Box>
-      </Flex>
-      <Footer/>
+        <Header />
+        <Hero />
+        <Flex align="center" justifyContent="center">
+          <Box w={{ base: "100%", sm: "100%", md: "100%", lg: "1440px" }}>
+            <Sectionproduct />
+            <News />
+            <Sectionlink />
+          </Box>
+        </Flex>
+        <Footer />
       </ParallaxProvider>
     </ChakraProvider>
   );
