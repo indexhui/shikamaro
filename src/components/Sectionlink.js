@@ -13,7 +13,7 @@ const linkInfo = [
   {
     place: 'Instagram',
     title: 'シロマロ',
-    link: 'https://www.instagram.com/shikamaro_painting/',
+    link: 'https://www.instagram.com/shiromaro_painting/',
     bgColor: themeColor01,
     avatar: avatarIg,
   },
@@ -27,7 +27,7 @@ const linkInfo = [
   {
     place: 'Instagram',
     title: 'English ver',
-    link: 'https://www.instagram.com/shikamaro_painting_en/',
+    link: 'https://www.instagram.com/shiromaro_painting_en/',
     bgColor: themeColor02,
     avatar: avatarIgEn,
   },
@@ -75,7 +75,7 @@ const Sectionlink = () => (
             bgColor={info.bgColor}
             borderRadius="8px"
           >
-            <Link href={info.link}>
+            <Link isExternal href={info.link}>
               <Flex
                 position="absolute"
                 w="100%"

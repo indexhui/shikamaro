@@ -3,9 +3,17 @@ import mergeImages from 'merge-images';
 import { Tabs, TabList, TabPanels, Tab, TabPanel, Box } from '@chakra-ui/react';
 import shiroface from '../shiroface';
 import { title } from '../shiroface/title';
-import { VStack, HStack, Link, Button, Text, Flex } from '@chakra-ui/react';
+import {
+  VStack,
+  HStack,
+  Link,
+  Button,
+  Text,
+  Flex,
+  Icon,
+} from '@chakra-ui/react';
 import { DownloadIcon, RepeatIcon } from '@chakra-ui/icons';
-
+import { FiInstagram } from 'react-icons/fi';
 import {
   Accordion,
   AccordionItem,
@@ -22,8 +30,8 @@ function Shiromaker() {
     bg: shiroface.bg[0],
     face: shiroface.face[0][0],
     clothes: shiroface.clothes[0],
-    hair: shiroface.hair[0][0],
     blush: shiroface.blush[0],
+    hair: shiroface.hair[0][0],
     mole: shiroface.mole[0],
     mouth: shiroface.mouth[0],
     eyes: shiroface.eyes[0],
@@ -53,8 +61,8 @@ function Shiromaker() {
       bg: randomArr(shiroface.bg),
       face: randomArr(shiroface.face[0]),
       clothes: randomArr(shiroface.clothes),
-      hair: randomArr(shiroface.hair[0]),
       blush: randomArr(shiroface.blush),
+      hair: randomArr(shiroface.hair[0]),
       // mole: randomArr(shiroface.mole),
       mouth: randomArr(shiroface.mouth),
       eyes: randomArr(shiroface.eyes),
@@ -71,6 +79,9 @@ function Shiromaker() {
           </Text>
           <Text fontSize="2xl" color="gray.500" letterSpacing="3px">
             シロマロのアイコンメーカー
+          </Text>
+          <Text mb="2" fontSize="sm" color="gray.400" letterSpacing="3px">
+            僅供作為大頭貼使用，請勿商用
           </Text>
           <VStack
             position="sticky"
@@ -214,6 +225,21 @@ function Shiromaker() {
             </Accordion>
           </Box>
         </VStack>
+        <Link
+          py="12"
+          isExternal
+          href="https://www.instagram.com/shiromaro_painting/"
+        >
+          <Flex align="center" direction="column">
+            <Icon fontSize="3xl" as={FiInstagram} mb="2" />
+            <Text fontSize="lg" color="gray.500" letterSpacing="3px">
+              喜歡的話請追蹤和分享‪‪‪‪❤︎‬‪
+            </Text>
+            <Text fontSize="lg" color="gray.500" letterSpacing="3px">
+              shiromaro_painting
+            </Text>
+          </Flex>
+        </Link>
       </VStack>
     </div>
   );

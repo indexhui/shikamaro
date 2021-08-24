@@ -9,7 +9,7 @@ import {
   MenuItem,
   Box,
   IconButton,
-  //   Link,
+  Link,
   Text,
   Image,
   Flex,
@@ -37,7 +37,7 @@ import logo from '../img/logo.jpg';
 
 const activeStyle = {
   // color: "blue.500",
-  color: '#22CAFF',
+  color: '#6DB6D7',
   _active: {
     color: 'blue.500',
   },
@@ -53,7 +53,9 @@ const Header = () => (
         width={{ base: '100%', sm: '100%', md: '1440px' }}
       >
         <Box pl="5px">
-          <Image w="60px" h="60px" src={logo} alt="シロマロ" />
+          <Link to="/" as={ReachLink}>
+            <Image w="60px" h="60px" src={logo} alt="シロマロ" />
+          </Link>
         </Box>
         <Spacer />
         <Flex justifyContent="center" align="center" color="white">
@@ -80,7 +82,7 @@ const Header = () => (
                 exact
                 activeStyle={activeStyle}
               >
-                Home
+                主頁
               </MenuItem>
               <MenuItem
                 to="/shiromaker"
@@ -89,7 +91,17 @@ const Header = () => (
                 exact
                 activeStyle={activeStyle}
               >
-                Shiromaker
+                小白頭貼製造機
+              </MenuItem>
+              <MenuItem
+                href="https://www.instagram.com/shiromaro_painting/"
+                color="gray.700"
+                as={Link}
+                isExternal
+                exact
+                activeStyle={activeStyle}
+              >
+                追蹤 IG
               </MenuItem>
             </MenuList>
           </Menu>

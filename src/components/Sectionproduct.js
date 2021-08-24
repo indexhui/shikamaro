@@ -151,7 +151,7 @@ const Sectionproduct = () => {
                 bgPosition="center"
                 bgSize="cover"
               />
-              <Link href={product.link}>
+              <Link isExternal href={product.link}>
                 <Flex
                   align="center"
                   justifyContent="center"
