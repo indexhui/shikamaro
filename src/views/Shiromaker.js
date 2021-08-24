@@ -1,119 +1,220 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import mergeImages from 'merge-images';
+import { Tabs, TabList, TabPanels, Tab, TabPanel, Box } from '@chakra-ui/react';
+import shiroface from '../shiroface';
+import { title } from '../shiroface/title';
+import { VStack, HStack, Link, Button, Text, Flex } from '@chakra-ui/react';
+import { DownloadIcon, RepeatIcon } from '@chakra-ui/icons';
+
 import {
-  Box,
-  VStack,
-  HStack,
-  Link,
-  Button,
-  Grid,
-  Text,
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
 } from '@chakra-ui/react';
-const shiroItem = {
-  background: {
-    default: require('../shiromaker/bg/bg01.png').default,
-    bg02: require('../shiromaker/bg/bg02.png').default,
-    bg03: require('../shiromaker/bg/bg03.png').default,
-    bg04: require('../shiromaker/bg/bg04.png').default,
-  },
-  face: {
-    default: require('../shiromaker/face/face01.png').default,
-    face02: require('../shiromaker/face/face02.png').default,
-    face03: require('../shiromaker/face/face03.png').default,
-    face04: require('../shiromaker/face/face04.png').default,
-  },
-  cloths: {
-    default: require('../shiromaker/cloths/cloths01.png').default,
-    cloths02: require('../shiromaker/cloths/cloths02.png').default,
-  },
-  hair: {
-    default: require('../shiromaker/hair/naoGray100.png').default,
-    hair02: require('../shiromaker/hair/naoGray200.png').default,
-    hair03: require('../shiromaker/hair/shiroGray100.png').default,
-    hair04: require('../shiromaker/hair/shiroGray200.png').default,
-  },
-  blush: {
-    default: require('../shiromaker/blush/blush01.png').default,
-    blush02: require('../shiromaker/blush/blush02.png').default,
-  },
-  mouth: {
-    default: require('../shiromaker/mouth/mouth01.png').default,
-    mouth02: require('../shiromaker/mouth/mouth02.png').default,
-  },
-  eyes: {
-    default: require('../shiromaker/eyes/eyes01.png').default,
-    eyes02: require('../shiromaker/eyes/eyes02.png').default,
-  },
-  eyebow: {
-    default: require('../shiromaker/eyebow/eyebow01.png').default,
-    eyebow02: require('../shiromaker/eyebow/eyebow02.png').default,
-    eyebow03: require('../shiromaker/eyebow/eyebow03.png').default,
-  },
-};
+
+const options = Object.keys(shiroface);
 
 function Shiromaker() {
   const [img, setImg] = useState('');
-  // const [option, setOption] = useState('background');
   const [shiro, setShiro] = useState({
-    background: shiroItem.background.bg04,
-    face: shiroItem.face.default,
-    cloths: shiroItem.cloths.default,
-    hair: shiroItem.hair.default,
-    blush: shiroItem.blush.default,
-    mouth: shiroItem.mouth.default,
-    eyes: shiroItem.eyes.default,
-    eyebow: shiroItem.eyebow.default,
+    bg: shiroface.bg[0],
+    face: shiroface.face[0][0],
+    clothes: shiroface.clothes[0],
+    hair: shiroface.hair[0][0],
+    blush: shiroface.blush[0],
+    mole: shiroface.mole[0],
+    mouth: shiroface.mouth[0],
+    eyes: shiroface.eyes[0],
+    eyebrow: shiroface.eyebrow[0],
   });
 
   const imgArr = Object.values(shiro);
   mergeImages(imgArr).then(b64 => setImg(b64));
+  useEffect(() => {
+    mergeImages(imgArr).then(b64 => setImg(b64));
+  }, [imgArr]);
+
+  const handClick = option => e => {
+    // e.preventDefault();
+    const value = e.currentTarget.value;
+    setShiro({ ...shiro, [option]: value });
+  };
 
   const handleRandom = () => {
-    function randomProps(object) {
-      const keyArr = Object.keys(object);
-      const item = keyArr[Math.floor(Math.random() * keyArr.length)];
-      return object[item];
+    function randomArr(arr) {
+      const num = Math.floor(Math.random() * arr.length);
+      return arr[num];
     }
 
     setShiro({
       ...shiro,
-      background: randomProps(shiroItem.background),
-      face: randomProps(shiroItem.face),
-      cloths: randomProps(shiroItem.cloths),
-      hair: randomProps(shiroItem.hair),
-      blush: randomProps(shiroItem.blush),
-      mouth: randomProps(shiroItem.mouth),
-      eyes: randomProps(shiroItem.eyes),
-      eyebow: randomProps(shiroItem.eyebow),
+      bg: randomArr(shiroface.bg),
+      face: randomArr(shiroface.face[0]),
+      clothes: randomArr(shiroface.clothes),
+      hair: randomArr(shiroface.hair[0]),
+      blush: randomArr(shiroface.blush),
+      // mole: randomArr(shiroface.mole),
+      mouth: randomArr(shiroface.mouth),
+      eyes: randomArr(shiroface.eyes),
+      eyebrow: randomArr(shiroface.eyebrow[1]),
     });
   };
 
   return (
-    <div>
-      <Grid minH="60vh" py={12}>
-        <VStack spacing={4}>
-          <Text fontSize="2xl" color="gray.500">
-            生成器
+    <div w="100%">
+      <VStack py={12} w="100%">
+        <VStack spacing={4} w="calc(100% - 20px)">
+          <Text fontSize="2xl" color="gray.500" letterSpacing="3px">
+            小白頭貼製造機
           </Text>
-          <Box
-            w="60"
-            h="60"
-            borderRadius="lg"
-            bgImage={imgArr
-              .map(src => `url('${src}')`)
-              .reverse()
-              .join(',')}
-            bgRepeat="no-repeat"
-            bgSize="cover"
-          ></Box>
-          <HStack spacing={2}>
-            <Button onClick={handleRandom}>Random</Button>
-            <Link href={img} download="Shiromaro">
-              <Button>Download</Button>
-            </Link>
-          </HStack>
+          <Text fontSize="2xl" color="gray.500" letterSpacing="3px">
+            シロマロのアイコンメーカー
+          </Text>
+          <VStack
+            position="sticky"
+            top="0"
+            w="100%"
+            maxW="720px"
+            bgColor="white"
+            border="4px"
+            rounded="lg"
+            borderColor="blue.50"
+            zIndex="10"
+            py="2"
+          >
+            <Box
+              w="60"
+              h="60"
+              borderRadius="lg"
+              bgImage={imgArr
+                .map(src => `url('${src}')`)
+                .reverse()
+                .join(',')}
+              bgRepeat="no-repeat"
+              bgSize="cover"
+            ></Box>
+            <HStack spacing={2}>
+              <Button onClick={handleRandom} leftIcon={<RepeatIcon />}>
+                ランダム
+              </Button>
+              <Link href={img} download="Shiromaro">
+                <Button leftIcon={<DownloadIcon />}>ダウンロード</Button>
+              </Link>
+            </HStack>
+          </VStack>
+          <Box w="90vw" maxW="720px">
+            <Accordion w="100%" allowMultiple allowToggle>
+              {options.map((option, key) => (
+                <AccordionItem key={key}>
+                  <AccordionButton>
+                    <Box flex="1" textAlign="left">
+                      {title[option]}
+                    </Box>
+                    <AccordionIcon />
+                  </AccordionButton>
+                  <AccordionPanel pb={4} w="100%">
+                    <Flex wrap="wrap" w="100%">
+                      {Array.isArray(shiroface[option][0]) ? (
+                        <Box w="100%">
+                          <Tabs variant="enclosed" w="100%">
+                            <TabList
+                              mb="1em"
+                              overflowX="scroll"
+                              overflowY="hidden"
+                              w="100%"
+                              h="16"
+                            >
+                              {shiroface[option].map((innerItem, key) => (
+                                <Tab key={key}>
+                                  <Box
+                                    w="8"
+                                    h="8"
+                                    bgImage={`url('${innerItem[0]}')`}
+                                    bgColor="gray.200"
+                                    bgRepeat="no-repeat"
+                                    bgSize="cover"
+                                  ></Box>
+                                </Tab>
+                              ))}
+                            </TabList>
+                            <TabPanels>
+                              {shiroface[option].map((innerItem, key) => (
+                                <TabPanel key={key} display="flex">
+                                  <Flex w="100%" wrap="wrap">
+                                    {innerItem.map((img, key) => (
+                                      <Button
+                                        w="20"
+                                        h="20"
+                                        key={key}
+                                        value={img}
+                                        mx="1"
+                                        my="1"
+                                        rounded="lg"
+                                        bgColor="white"
+                                        bgImage={`url('${img}')`}
+                                        border="2px"
+                                        // border={
+                                        //   img === shiro[option] ? '2px' : '0'
+                                        // }
+                                        borderColor={
+                                          img === shiro[option]
+                                            ? 'gray.300'
+                                            : 'gray.100'
+                                        }
+                                        bgRepeat="no-repeat"
+                                        bgSize="cover"
+                                        onClick={handClick(option)}
+                                        _hover={{ backgroundColor: 'none' }}
+                                        _active={{ backgroundColor: 'none' }}
+                                      ></Button>
+                                    ))}
+                                  </Flex>
+                                </TabPanel>
+                              ))}
+                            </TabPanels>
+                          </Tabs>
+                        </Box>
+                      ) : (
+                        shiroface[option].map((item, key) => (
+                          <Button
+                            w="16"
+                            h="16"
+                            key={key}
+                            mx="1"
+                            my="1"
+                            bgImage={`url('${item}')`}
+                            value={item}
+                            onClick={handClick(option)}
+                            bgColor="white"
+                            border="2px"
+                            bgRepeat="no-repeat"
+                            bgSize="cover"
+                            outline="0"
+                            borderColor={
+                              item === shiro[option] ? 'gray.300' : 'gray.100'
+                            }
+                            _hover={{ backgroundColor: 'none' }}
+                            _active={{
+                              backgroundColor: 'none',
+                              outline: 'none',
+                            }}
+                            _focus={{
+                              backgroundColor: 'none',
+                              outline: 'none',
+                            }}
+                          ></Button>
+                        ))
+                      )}
+                    </Flex>
+                  </AccordionPanel>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </Box>
         </VStack>
-      </Grid>
+      </VStack>
     </div>
   );
 }

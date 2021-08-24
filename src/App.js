@@ -7,7 +7,7 @@ import Shiromaker from './views/Shiromaker';
 import { ChakraProvider } from '@chakra-ui/react';
 
 import Header from './components/Header';
-import Footer from './components/Footer';
+
 import ScrollToTop from './components/ScrollToTop';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { extendTheme } from '@chakra-ui/react';
@@ -46,7 +46,6 @@ function App() {
             <Route path="/" exact component={Home} />
             <Route path="/shiromaker" component={Shiromaker} />
           </Switch>
-          <Footer />
         </ParallaxProvider>
       </Router>
     </ChakraProvider>
