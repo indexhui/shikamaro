@@ -103,6 +103,7 @@ function Shiromaker() {
               bgColor="white"
               zIndex="10"
               py="2"
+              mr="4"
               border="4px"
               rounded="lg"
               borderColor="blue.50"
@@ -132,9 +133,13 @@ function Shiromaker() {
                 {options.map((option, key) => (
                   <AccordionItem key={key}>
                     <AccordionButton>
-                      <Box flex="1" textAlign="left">
+                      <Text
+                        fontSize={{ base: 'lg', xl: 'xl' }}
+                        flex="1"
+                        textAlign="left"
+                      >
                         {title[option]}
-                      </Box>
+                      </Text>
                       <AccordionIcon />
                     </AccordionButton>
                     <AccordionPanel pb={4} w="100%">
