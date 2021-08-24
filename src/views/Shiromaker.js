@@ -55,18 +55,24 @@ function Shiromaker() {
       const num = Math.floor(Math.random() * arr.length);
       return arr[num];
     }
+    function randomDoubleArr(arr) {
+      const num = Math.floor(Math.random() * arr.length);
+      const num2 = Math.floor(Math.random() * arr[0].length);
+      return arr[num][num2];
+    }
 
     setShiro({
       ...shiro,
       bg: randomArr(shiroface.bg),
-      face: randomArr(shiroface.face[0]),
+      face: randomDoubleArr(shiroface.face),
       blush: randomArr(shiroface.blush),
-      hair: randomArr(shiroface.hair[0]),
+      hair: randomDoubleArr(shiroface.hair),
       clothes: randomArr(shiroface.clothes),
       // mole: randomArr(shiroface.mole),
       mouth: randomArr(shiroface.mouth),
       eyes: randomArr(shiroface.eyes),
-      eyebrow: randomArr(shiroface.eyebrow[1]),
+      eyebrow: randomDoubleArr(shiroface.eyebrow),
+      accessories: randomArr(shiroface.accessories),
     });
   };
 
