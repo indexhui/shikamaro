@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.31478f5c.chunk.js",
-    "main.js.map": "/static/js/main.31478f5c.chunk.js.map",
+    "main.js": "/static/js/main.8e6d6059.chunk.js",
+    "main.js.map": "/static/js/main.8e6d6059.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fc794ddf.js",
     "runtime-main.js.map": "/static/js/runtime-main.fc794ddf.js.map",
     "static/js/2.88e41e1b.chunk.js": "/static/js/2.88e41e1b.chunk.js",
@@ -78,6 +78,7 @@
     "static/media/avatar_yt.821a1f03.png": "/static/media/avatar_yt.821a1f03.png",
     "static/media/easycard.671180ef.png": "/static/media/easycard.671180ef.png",
     "static/media/easycardLimit.72e4196e.png": "/static/media/easycardLimit.72e4196e.png",
+    "static/media/gogoshopapp.ad98a060.jpg": "/static/media/gogoshopapp.ad98a060.jpg",
     "static/media/hero_bg.4c6bbf06.png": "/static/media/hero_bg.4c6bbf06.png",
     "static/media/hero_bg_lg.93200f3e.png": "/static/media/hero_bg_lg.93200f3e.png",
     "static/media/lineStickr01JP.00927d58.jpg": "/static/media/lineStickr01JP.00927d58.jpg",
@@ -90,6 +91,6 @@
   "entrypoints": [
     "static/js/runtime-main.fc794ddf.js",
     "static/js/2.88e41e1b.chunk.js",
-    "static/js/main.31478f5c.chunk.js"
+    "static/js/main.8e6d6059.chunk.js"
   ]
 }
