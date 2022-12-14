@@ -10,4 +10,7 @@ export const title = {
   mole: 'ほくろ 、ヒゲ / 痣、鬍子	',
   mouth: '口 / 嘴',
   nose: '鼻 /	鼻子',
+  ornament: '髪飾り /	頭飾',
+  makeup: 'メーク / 臉妝',
+  stamp: 'スタンプ / 貼紙',
 };

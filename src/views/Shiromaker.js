@@ -30,12 +30,17 @@ function Shiromaker() {
     bg: shiroface.bg[0],
     face: shiroface.face[0][0],
     blush: shiroface.blush[0],
-    hair: shiroface.hair[0][0],
     mole: shiroface.mole[0],
-    clothes: shiroface.clothes[0],
+    makeup: shiroface.makeup[0],
+    hair: shiroface.hair[0][0],
+    nose: shiroface.nose[0],
     mouth: shiroface.mouth[0],
     eyes: shiroface.eyes[0],
     eyebrow: shiroface.eyebrow[0],
+    clothes: shiroface.clothes[0],
+    accessories: shiroface.accessories[0],
+    ornament: shiroface.ornament[0],
+    stamp: shiroface.stamp[0],
   });
 
   const imgArr = Object.values(shiro);

@@ -11,6 +11,7 @@ import {
 } from '@chakra-ui/react';
 
 import easycardLimit from '../assets/images/easycardLimit.png';
+import gogoshopapp from '../assets/images/gogoshopapp.jpg';
 import easycard from '../assets/images/easycard.png';
 import penker from '../assets/images/penker.png';
 import linetheme from '../assets/images/lineTheme.jpg';
@@ -49,13 +50,21 @@ const bgAnimate = keyframes`
 const animation = `${bgAnimate} 2 1s ease`;
 const productDetail = [
   {
+    name: '小白的衣服小舖 ',
+    link: 'https://shiromaro1208.gogoshopapp.com/',
+    src: gogoshopapp,
+    bgColor: '#BEC9C2',
+    color: '#85817A',
+    key: 4,
+  },
+  {
     name: '小白直君動起來了！',
     link: 'https://store.line.me/stickershop/product/15268788/',
     src: assemble9,
     bgColor: '#CFE4DB',
     color: '#6D6D6D',
     animation: animation,
-    key: 1,
+    key: 0,
   },
   {
     name: '小白直君第一彈-情侶篇',
@@ -96,14 +105,6 @@ const productDetail = [
     bgColor: '#B1DDE0',
     color: '#595959',
     key: 3,
-  },
-  {
-    name: 'シロマロ×PENKER ',
-    link: 'https://shiromaro_painting.penker.tw/',
-    src: penker,
-    bgColor: '#A8BA99',
-    color: '#595959',
-    key: 4,
   },
   // {
   //   name: '犀牛盾手機殼',
