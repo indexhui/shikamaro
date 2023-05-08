@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.8e6d6059.chunk.js",
-    "main.js.map": "/static/js/main.8e6d6059.chunk.js.map",
+    "main.js": "/static/js/main.54a88013.chunk.js",
+    "main.js.map": "/static/js/main.54a88013.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fc794ddf.js",
     "runtime-main.js.map": "/static/js/runtime-main.fc794ddf.js.map",
     "static/js/2.88e41e1b.chunk.js": "/static/js/2.88e41e1b.chunk.js",
@@ -86,11 +86,12 @@
     "static/media/lineTheme.fea294a5.jpg": "/static/media/lineTheme.fea294a5.jpg",
     "static/media/line_sticker.dd3e8351.png": "/static/media/line_sticker.dd3e8351.png",
     "static/media/penker.0d45d9dc.png": "/static/media/penker.0d45d9dc.png",
-    "static/media/phone_case.6d13c384.png": "/static/media/phone_case.6d13c384.png"
+    "static/media/phone_case.6d13c384.png": "/static/media/phone_case.6d13c384.png",
+    "static/media/summerClothes.64deb977.png": "/static/media/summerClothes.64deb977.png"
   },
   "entrypoints": [
     "static/js/runtime-main.fc794ddf.js",
     "static/js/2.88e41e1b.chunk.js",
-    "static/js/main.8e6d6059.chunk.js"
+    "static/js/main.54a88013.chunk.js"
   ]
 }
